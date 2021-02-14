@@ -2,15 +2,8 @@ on: [push]
 
 jobs:
   check-ssh:
-    name: Trying ssh
+    name: Trying ansible
     runs-on: ubuntu-20.04
     steps:
       - name: Check ssh version
-        # ssh does exist, change to placeholder since it will throw error
-        # run: ssh --version
-        run: echo "ssh does exist"
-      - name: Check pwd
-        run: echo $PWD
-      - name: Check ssh folder
-        # run: ls ~/.ssh
-        run: echo ".ssh folder does not exist, to populate keys, use available actions"
+        run: ansible --version
