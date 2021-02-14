@@ -10,3 +10,9 @@ Need to specify direct path to gpg program
 [gpg]
 	program = /Program Files (x86)/GnuPG/bin/gpg.exe
 ```
+
+## GitHub
+
+### Action
+
+-  ssh is available on default ubuntu image

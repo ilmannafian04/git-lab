@@ -1,3 +1,5 @@
+3. Test whether GitHub Action default image contain ssh (it does)
+
 2. Silly me commit from wsl, now is a proper test
 
 1. Test whether a copied gpg folder from wsl to windows will still work
