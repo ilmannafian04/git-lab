@@ -1,3 +1,5 @@
+6. Ansible is already available in base ubuntu image in GH action
+
 5. ssh stuff in action
 
 4. Change primary branch from master to main

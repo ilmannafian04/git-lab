@@ -2,8 +2,8 @@ on: [push]
 
 jobs:
   check-ssh:
-    name: Trying ansible
+    name: Template
     runs-on: ubuntu-20.04
     steps:
-      - name: Check ssh version
-        run: ansible --version
+      - name: Placeholder
+        run: date
