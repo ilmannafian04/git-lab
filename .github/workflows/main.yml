@@ -8,4 +8,8 @@ jobs:
       - name: Check ssh version
         # ssh does exist, change to placeholder since it will throw error
         # run: ssh --version
-        run: date
+        run: echo "ssh does exist"
+      - name: Check pwd
+        run: echo $PWD
+      - name: Check ssh folder
+        run: ls ~/.ssh
