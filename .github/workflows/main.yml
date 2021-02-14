@@ -1,0 +1,9 @@
+on: [push]
+
+jobs:
+  check-ssh:
+    name: Trying ssh
+    runs-on: ubuntu-20.04
+    steps:
+      - name: Check ssh version
+        run: ssh --version
