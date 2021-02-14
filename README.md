@@ -15,4 +15,5 @@ Need to specify direct path to gpg program
 
 ### Action
 
--  ssh is available on default ubuntu image
+- ssh is available on default ubuntu image
+- .ssh folder is not configured, use action from marketplace to configure
