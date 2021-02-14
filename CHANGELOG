@@ -1,3 +1,5 @@
+4. Change primary branch from master to main
+
 3. Test whether GitHub Action default image contain ssh (it does)
 
 2. Silly me commit from wsl, now is a proper test
