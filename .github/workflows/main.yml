@@ -17,11 +17,10 @@ jobs:
     runs-on: ubuntu-20.04
     needs: upload
     steps:
-      - run: pwd
-      - run: ls
       - name: Download artifact
         uses: actions/download-artifact@v2
+        id: lmao
         with:
           name: txt
-      - run: pwd
-      - run: ls
+      - run: echo ${{steps.lmao.outputs.download-path}}
+      - run: cat ${{steps.lmao.outputs.download-path}}/test.txt
