@@ -18,3 +18,4 @@ Need to specify direct path to gpg program
 - ssh is available on default ubuntu image
 - .ssh folder is not configured, use action from marketplace to configure
 - Ansible is availbale in ubuntu base image
+- Careful with artifact pathing
