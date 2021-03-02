@@ -1,9 +1,26 @@
 on: [push]
 
 jobs:
-  check-ssh:
-    name: Template
+  upload:
+    name: Test artifact upload
     runs-on: ubuntu-20.04
     steps:
-      - name: Placeholder
-        run: date
+      - name: Touch
+        run: echo "lmao" > test.txt
+      - name: Upload artifact
+        uses: actions/upload-artifact@v2
+        with:
+          name: txt
+          path: ./test.txt
+  download:
+    name: Test artifact download
+    runs-on: ubuntu-20.04
+    steps:
+      - run: pwd
+      - run: ls
+      - name: Download artifact
+        uses: actions/download-artifact@v2
+        with:
+          name: txt
+      - run: pwd
+      - run: ls
