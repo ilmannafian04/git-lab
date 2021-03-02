@@ -5,13 +5,13 @@ jobs:
     name: Test artifact upload
     runs-on: ubuntu-20.04
     steps:
-      - name: Touch
-        run: echo "lmao" > test.txt
+      - run: mkdir lol
+      - run: echo "lmao" > lol/test.txt
       - name: Upload artifact
         uses: actions/upload-artifact@v2
         with:
           name: txt
-          path: ./test.txt
+          path: ./lol/
   download:
     name: Test artifact download
     runs-on: ubuntu-20.04
