@@ -1,3 +1,5 @@
+8. Run job inside a container
+
 7. Testing artifact actions
 
 6. Ansible is already available in base ubuntu image in GH action

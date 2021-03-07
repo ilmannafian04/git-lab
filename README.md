@@ -19,3 +19,4 @@ Need to specify direct path to gpg program
 - .ssh folder is not configured, use action from marketplace to configure
 - Ansible is availbale in ubuntu base image
 - Careful with artifact pathing
+- run inside a container using `container:` key

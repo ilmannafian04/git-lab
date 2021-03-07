@@ -6,4 +6,4 @@ jobs:
     runs-on: ubuntu-20.04
     container: quay.io/ansible/toolset
     steps:
-      - run: ansible-lint
+      - run: ansible-lint --help
