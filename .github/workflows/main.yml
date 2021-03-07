@@ -4,5 +4,6 @@ jobs:
   upload:
     name: Test existence of ansible lint
     runs-on: ubuntu-20.04
+    container: quay.io/ansible/toolset
     steps:
       - run: ansible-lint
