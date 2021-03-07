@@ -2,25 +2,7 @@ on: [push]
 
 jobs:
   upload:
-    name: Test artifact upload
+    name: Test existence of ansible lint
     runs-on: ubuntu-20.04
     steps:
-      - run: mkdir lol
-      - run: echo "lmao" > lol/test.txt
-      - name: Upload artifact
-        uses: actions/upload-artifact@v2
-        with:
-          name: txt
-          path: ./lol/
-  download:
-    name: Test artifact download
-    runs-on: ubuntu-20.04
-    needs: upload
-    steps:
-      - name: Download artifact
-        uses: actions/download-artifact@v2
-        id: lmao
-        with:
-          name: txt
-      - run: echo ${{steps.lmao.outputs.download-path}}
-      - run: cat ${{steps.lmao.outputs.download-path}}/test.txt
+      - run: ansible-lint
