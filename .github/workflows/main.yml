@@ -1,9 +1,16 @@
-on: [push]
+name: deploy app
+
+on:
+  push:
+    branches:
+      - main
 
 jobs:
-  upload:
-    name: Test existence of ansible lint
-    runs-on: ubuntu-20.04
-    container: quay.io/ansible/toolset
+  deploy:
+    runs-on: ubuntu-latest
     steps:
-      - run: ansible-lint --help
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v2
+        with:
+          node-version: '14'
+      - run: pnpm --help
